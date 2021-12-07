@@ -1,0 +1,101 @@
+body{
+    background-color: lightblue;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#gameBoard{
+    background-color: darkgray;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+#gameBoard div {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+#gameBoard div:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+#playSelectionBackground{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#playSelectionCard{
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+#playSelectionCard button{
+    cursor: pointer;
+    max-height: 40px;
+    margin: 5px;
+    background-color: white;
+    border-color: black;
+}
+
+#playSelectionCard button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.displayNone{
+    display: none!important;
+}
+
+.disabled{
+    cursor: not-allowed!important;
+}
+.disabled:hover{
+    background-color: red!important;
+}
+
+#gameReset{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#gameReset:hover{
+    background-color: darkred;
+}
